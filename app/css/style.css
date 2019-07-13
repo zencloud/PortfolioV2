@@ -57,7 +57,7 @@ li a:hover {
     min-width: 700px;
 }
 
-.content-welcome-text {
+.content-text {
     text-align: left;
     display: flex;
     justify-content: flex-end;
@@ -71,22 +71,22 @@ li a:hover {
     min-width: 300px;
 }
 
-.welcome-img {
-    margin-top: 12vh;
-    max-width: 100%;
-}
-
-.content-welcome-text h1 {
+.content-text h1 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 60px;
     margin: -75px 0 40px 0;
 }
 
-.content-welcome-text h2 {
+.content-text h2 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
     margin: 0 0 20px 0;
     color: orange;
+}
+
+.welcome-img {
+    margin-top: 12vh;
+    max-width: 100%;
 }
 
 .text-white {
