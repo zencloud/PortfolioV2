@@ -1,17 +1,37 @@
-
-
 * {
     box-sizing: border-box;
 }
 
-.html, body {
+html, body {
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+}
+
 .section {
     text-align: center;
-    font-size: 3em;
+    font-size: 1em;
 }
 
 .welcome {
@@ -26,6 +46,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
+    max-width: 900px;
 }
 
 .content-welcome-text {
@@ -34,15 +55,16 @@
     justify-content: flex-end;
     align-items: left;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 30px;
     margin-left: 30px;
     font-size: 18px;
     font-weight: 50;
     line-height: 22px;
+    min-width: 300px;
 }
 
 .welcome-img {
-    margin-top: 60px;
+    margin-top: 12vh;
 }
 
 .content-welcome-text h1 {
@@ -50,7 +72,6 @@
     font-size: 60px;
     margin: -75px 0 40px 0;
 }
-
 
 .text-white {
     color: #ffffff;
@@ -60,6 +81,48 @@
     color: orange;
 }
 
-p {
-    margin-bottom: 10px;
+.btn-welcome {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    border: 0;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    font-weight: 100;
+    background-color: #0a592b;
+    color: #ecf0f1;
+}
+
+.btn-welcome:hover {
+    background-color: #053519;
+    cursor: pointer;
+}
+
+.btn-welcome:focus {
+    outline: none;
+}
+
+.btn-welcome i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.header-letterbox {
+    position: absolute;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    top: 0px;
+    z-index: 1;
+    background-color: #282828;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.header-letterbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
