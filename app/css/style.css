@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 html, body {
@@ -23,10 +24,14 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 10px;
+    padding: 8px 10px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 100;
+}
+
+li a:hover {
+    color: orange;
 }
 
 .section {
@@ -34,7 +39,7 @@ li a {
     font-size: 1em;
 }
 
-.welcome {
+.welcome-bg {
     background-image: url("../imgs/bg_welcome.png");
     background-size: contain;
     display: flex;
@@ -57,7 +62,7 @@ li a {
     flex-direction: column;
     margin-right: 30px;
     margin-left: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 50;
     line-height: 22px;
     min-width: 300px;
@@ -65,12 +70,20 @@ li a {
 
 .welcome-img {
     margin-top: 12vh;
+    max-width: 100%;
 }
 
 .content-welcome-text h1 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 60px;
     margin: -75px 0 40px 0;
+}
+
+.content-welcome-text h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: orange;
 }
 
 .text-white {
@@ -81,7 +94,7 @@ li a {
     color: orange;
 }
 
-.btn-welcome {
+.btn {
     margin-top: 25px;
     display: inline-flex;
     align-items: center;
@@ -92,20 +105,29 @@ li a {
     font-family: 'Comfortaa', cursive;
     font-size: 14px;
     font-weight: 100;
+}
+
+.btn-orange {
+    background-color: #e77e22;
+    color: #ecf0f1;
+}
+
+.btn-green {
     background-color: #0a592b;
     color: #ecf0f1;
 }
 
-.btn-welcome:hover {
+.btn-green:hover {
     background-color: #053519;
     cursor: pointer;
 }
 
-.btn-welcome:focus {
-    outline: none;
+.btn-orange:hover {
+    background-color: #c85d00;
+    cursor: pointer;
 }
 
-.btn-welcome i {
+i {
     font-size: 20px;
     margin-right: 10px;
 }
@@ -113,7 +135,7 @@ li a {
 .header-letterbox {
     position: absolute;
     display: flex;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 15px 10px 15px;
     top: 0px;
     z-index: 1;
     background-color: #282828;
@@ -125,4 +147,10 @@ li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.gamedev-container {
+    background-image: url("../imgs/bg_gamedev.png");
+    background-size: contain;
+    display: flex;
 }
