@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     outline: none;
+    transition: opacity 0.5s ease;
 }
 
 html, body {
@@ -37,6 +38,7 @@ li a:hover {
 .section {
     text-align: center;
     font-size: 1em;
+    min-width: 700px;
 }
 
 .welcome-bg {
@@ -52,6 +54,7 @@ li a:hover {
     align-items: center;
     width: 90%;
     max-width: 900px;
+    min-width: 700px;
 }
 
 .content-welcome-text {
@@ -152,5 +155,4 @@ i {
 .gamedev-container {
     background-image: url("../imgs/bg_gamedev.png");
     background-size: contain;
-    display: flex;
 }
