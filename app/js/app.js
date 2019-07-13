@@ -23,8 +23,8 @@ new fullpage('#fullpage', {
         }
 
         // Contact
-        if (destination.index === 1 && direction === 'down') {
-            document.getElementById("header-letterbox").style.backgroundColor = "#28814d";
+        if (destination.index === 3) {
+            document.getElementById("header-letterbox").style.backgroundColor = "#9a59b5";
         }
     },
 });
@@ -38,10 +38,8 @@ let btnGamedev = document.getElementById("btn-gamedev");
 // Add Listeners
 btnWelcome.addEventListener('click', function () {
     fullpage_api.moveSectionDown();
-    headerBG = document.getElementById("header-letterbox").style.backgroundColor = "#28814d";
 });
 
 btnGamedev.addEventListener('click', function () {
     fullpage_api.moveSectionDown();
-    headerBG = document.getElementById("header-letterbox").style.backgroundColor = "#28814d";
 });

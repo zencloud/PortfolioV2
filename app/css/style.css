@@ -121,6 +121,16 @@ li a:hover {
     color: #ecf0f1;
 }
 
+.btn-purple {
+    background-color: #9a59b5;
+    color: #ecf0f1;
+}
+
+.btn-purple:hover {
+    background-color: #704185;
+    cursor: pointer;
+}
+
 .btn-green:hover {
     background-color: #053519;
     cursor: pointer;
@@ -156,4 +166,22 @@ i {
 .gamedev-container {
     background-image: url("../imgs/bg_gamedev.png");
     background-size: contain;
+}
+
+.app-dev-container {
+    background-image: url("../imgs/bg_appdev.png");
+    background-size: contain;
+}
+
+.app-dev-cell-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-dev-cell {
+    min-width: 250px;
+    height: 130px;
+    background-color: #9a59b5;
+    margin: 10px;
 }
