@@ -1,0 +1,65 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.html, body {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+}
+
+.section {
+    text-align: center;
+    font-size: 3em;
+}
+
+.welcome {
+    background-image: url("../imgs/bg_welcome.png");
+    background-size: contain;
+    display: flex;
+}
+
+.flex {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.content-welcome-text {
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 50;
+    line-height: 22px;
+}
+
+.welcome-img {
+    margin-top: 60px;
+}
+
+.content-welcome-text h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 60px;
+    margin: -75px 0 40px 0;
+}
+
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-orange {
+    color: orange;
+}
+
+p {
+    margin-bottom: 10px;
+}
