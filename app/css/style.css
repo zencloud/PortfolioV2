@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     outline: none;
-    transition: opacity 0.5s ease;
+    transition:all 0.3s ease;
 }
 
 html, body {
@@ -90,7 +90,7 @@ li a:hover {
     margin: -75px 0 40px 0;
 }
 
-.content-text h2 {
+.content-text h2, .content-text-appdev h2 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
     margin: 0 0 20px 0;
@@ -203,4 +203,9 @@ i {
     height: 124px;
     background-color: #9a59b5;
     margin: 10px;
+}
+
+.app-dev-cell img:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }

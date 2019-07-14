@@ -1,45 +1,34 @@
 new fullpage('#fullpage', {
 
+    // Generate #href-anchors for section navigation
     anchors: ['welcome', 'gamedev', 'appdev', 'contact'],
-    //sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 
     // Change letterbox color on transition
     onLeave: function (origin, destination, direction) {
-    
 
-        // Welcome
-        if (destination.index === 0) {
-            document.getElementById("header-letterbox").style.backgroundColor = "#282828";
-        }
+        // Load Array of BG choices
+        let headerArray = ['#282828', '#28814d', '#e77e22', '#9a59b5',];
 
-        // Gamedev
-        if (destination.index === 1) {
-            document.getElementById("header-letterbox").style.backgroundColor = "#28814d";
-        }
+        // Assign new color based on section index
+        document.getElementById("header-letterbox").style.backgroundColor = headerArray[destination.index];
 
-        // Appdev
-        if (destination.index === 2) {
-            document.getElementById("header-letterbox").style.backgroundColor = "#e77e22";
-        }
-
-        // Contact
-        if (destination.index === 3) {
-            document.getElementById("header-letterbox").style.backgroundColor = "#9a59b5";
-        }
     },
 });
 
-
-// Navigation Listeners
+// Section buttons
 let btnWelcome = document.getElementById("btn-welcome");
 let btnGamedev = document.getElementById("btn-gamedev");
+let btnAppdev  = document.getElementById("btn-appdev");
 
-
-// Add Listeners
+// Add Listeners to section buttons
 btnWelcome.addEventListener('click', function () {
     fullpage_api.moveSectionDown();
 });
 
 btnGamedev.addEventListener('click', function () {
+    fullpage_api.moveSectionDown();
+});
+
+btnAppdev.addEventListener('click', function () {
     fullpage_api.moveSectionDown();
 });
