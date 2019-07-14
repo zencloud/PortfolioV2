@@ -1,6 +1,6 @@
 new fullpage('#fullpage', {
 
-    anchors: ['stageWelcome', 'stageGamedev', 'stageAppdev', 'stageContact'],
+    anchors: ['welcome', 'gamedev', 'appdev', 'contact'],
     //sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 
     // Change letterbox color on transition
