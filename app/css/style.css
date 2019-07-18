@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
     outline: none;
-    transition:all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 html, body {
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
 }
+
 
 p {
     margin-bottom: 10px;
@@ -35,11 +36,6 @@ li a:hover {
     color: orange;
 }
 
-.section {
-    text-align: center;
-    font-size: 1em;
-    min-width: 700px;
-}
 
 .welcome-bg {
     background-image: url("../imgs/bg_welcome.png");
@@ -54,8 +50,8 @@ li a:hover {
     align-items: center;
     width: 95%;
     max-width: 900px;
-    min-width: 700px;
-    flex: 1;
+    min-width: min-content;
+    //flex-wrap: wrap-reverse;
 }
 
 .content-text {
@@ -186,9 +182,55 @@ i {
     background-size: contain;
 }
 
-.contact-container {
+.contact-bg {
     background-image: url("../imgs/bg_contact.png");
     background-size: contain;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contact-container a:link,
+.contact-container a:visited,
+.contact-container a:active {
+    color: #2b80b9;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    color: orange;
+    font-weight: 300;
+}
+.contact-left {
+    text-align: right;
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.contact-left i {
+    margin: 0;
+}
+
+.contact-left p:first-child {
+    color: orange;
+    font-size: 22px;
+}
+
+.contact-left p:nth-child(3) {
+    margin-top:  60px;
+}
+
+.contact-divider {
+    width: 4px;
+    height: auto;
+    border-radius: 100px;
+    background-color: orange;
+    margin: 0 12px 0 12px;
 }
 
 .app-dev-cell-container {
@@ -208,4 +250,8 @@ i {
 .app-dev-cell img:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+.column {
+    flex-direction: column;
 }
